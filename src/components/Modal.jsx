@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const Modal = ({isOpen, onClose, rating}) => {
 if (!isOpen) return null;
 
@@ -7,9 +9,9 @@ if (!isOpen) return null;
           <div className ="modal">
             <h2>Thank you </h2>
             <p>You rated us { rating} star {rating > 1 ? 's' :''}</p>
-            <button className="close-btn" onClick={onClose}>
+            <Button className="close-btn" onClick={onClose}>
               Close
-            </button>
+            </Button>
             </div>
             </div>
           );
